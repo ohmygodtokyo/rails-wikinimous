@@ -1,0 +1,21 @@
+<%= render "navbar" %>
+
+<div id="articles">
+  <h1>Edit Article</h1>
+
+  <%= render "form", article: @article %>
+  <br>
+  <div class="d-flex">
+
+    <div class="fa-sharp">
+      <%= link_to "Show this article", @article %>
+    </div>
+
+    <div class="px-2">|</div>
+
+    <div class="fa-sharp">
+      <%= link_to "Back to articles", root_path %>
+    </div>
+
+  </div>
+</div>
